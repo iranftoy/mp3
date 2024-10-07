@@ -1,0 +1,30 @@
+<html>
+    <meta charset="UTF-8">
+    <body>
+        <link rel="stylesheet" href=".\node_modules\aplayer\dist\APlayer.min.css">
+        <div id="aplayer"></div>
+        <script src=".\node_modules\aplayer\dist\APlayer.min.js"></script>
+    </body>
+    <head>
+        <script>
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                lrcType: 3,
+                audio: [{
+                    name: 'Moon Halo',
+                    artist: '茶理理 / TetraCalyx / Hanser',
+                    url: '.\\Music\\Moon Halo\\茶理理,TetraCalyx,Hanser - Moon Halo.mp3',
+                    cover: 'cover.jpg',
+                    lrc: '.\\Music\\Moon Halo\\Moon Halo.lrc'
+                },
+                {
+                    name: '妄想哀歌 (feat. 初音ミク & 可不)',
+                    artist: 'MIMI',
+                    url: '.\\Music\\妄想哀歌 (feat. 初音ミク & 可不)\\MIMI,初音ミク,可不 - 妄想哀歌 (feat. 初音ミク & 可不).mp3',
+                    cover: 'cover.jpg',
+                    lrc: '.\\Music\\妄想哀歌 (feat. 初音ミク & 可不)\\妄想哀歌 (feat. 初音ミク & 可不).lrc'
+                }]
+            });
+        </script>
+    </head>
+</html>
